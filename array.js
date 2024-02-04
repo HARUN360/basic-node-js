@@ -92,7 +92,7 @@
 // numbers.reverse();
 // console.log(numbers);
 
-// 7.2 manualy fon-of:
+// 7.2 manualy for-of:
 // const numbers = [1,2,3,4,5,6,7,8,9];
 // const rev_numbers = [];
 // for (const num of numbers){
@@ -120,9 +120,98 @@
 // -----------------------------------------------end------------------------------------------------------
 
 // 8. sortded poddoti: ati 2 pokar (1. Asecnding= A-z, 2.Decending = Z-A);--------------------------------->
-const numbers = [5,2,40,56,10,45,20,1,9];
-const num_asc = numbers.sort(function (a, b){return a -b});
-const num_dsc = numbers.sort(function (a, b){return b - a});
-console.log(num_asc);
-console.log(num_dsc);
+// const numbers = [5,2,40,56,10,45,20,1,9];
+// const num_asc = numbers.sort(function (a, b){return a -b});
+// const num_dsc = numbers.sort(function (a, b){return b - a});
+// console.log(num_asc);
+// console.log(num_dsc);
+// ----------------------------------------------end-------------------------------------------------------
 
+// 9. je kono muhurte array last item dekhte koronia?------------------------------------------------------->
+// const num = ['kudu', 'modu', 'sudu'];
+//  num[3] = 'nodu';
+// console.log(num);
+// num.push('todu','kobu');
+// console.log(num);
+// console.log(num [num.length - 1 ]);/**last item */
+// console.log(num.join(' + '));
+//---------------------------------------------------end----------------------------------------------------- 
+
+
+// 10. 2ti araay value aksate dekhate?------------------------------------------------------------------------->
+// const x = [10,20,30,40,50];
+// const y = [60,70,80,90,100];
+// const z = x.concat(y);
+// console.log(z);
+// const p = [120,240,360]
+// const all = x.concat(y,p);
+// console.log(all);
+
+// 10.2 flat ar kah:
+// const a = [
+//     [10,20,30,],
+//     [40,50,60,70],
+//     [80,90,100]
+// ]
+// console.log(a);
+// console.log(a.flat());
+// -------------------------------------------------------end----------------------------------------------
+// 11. splice kaj ki?------------------------------------------------------------------------------------->
+// 11.1 add:(kuthia theke add hove,koto index theke remove hobe)
+// const num = ['korim','akkas','batas','tatas'];
+// num.splice(2,1,'hotas','niras');
+// console.log(num);
+
+
+// 11.2 remove:(starnting,ending point)
+// const num = ['korim','akkas','batas','tatas'];
+// num.splice(1,3);
+// console.log(num);
+
+// 11.3 slice method:(suru, seser porer value)
+// const num = ['korim','akkas','batas','tatas'];
+// const newArray = num.slice(1,3);
+// console.log(num);
+// console.log(newArray);
+// --------------------------------------------------------end-------------------------------------------------------
+
+// 12. 1D array and 2d array
+// 12.1 1d(high scrore function maddome ber korar upay )
+// function highestScore(scrore){
+//   let max = scrore [0];
+//   for(let x = 1; x<scrore.length; x++){
+//      if(max < scrore[x]){
+//         max = scrore[x];
+//      }
+//   }
+//   return max;
+// }
+// let scrore = [10,20,30,40,35,80,50];
+// const maxScore = highestScore(scrore);
+// console.log(maxScore);
+
+
+// 12.2 2D array(amon akti funct toiri koro jekhan theke highscorar ar name output dhekau)?
+function highestRunScore(playeersInfo){
+   var highestScore = playeersInfo[0] [0];
+   var highestScore = playeersInfo[0] [1];
+
+   for(var x = 1; x<playeersInfo.length; x++){
+
+    if(highestScore < playeersInfo [x] [1]){
+        highestScore = playeersInfo [x] [1];
+        highestScore = playeersInfo[x] [0];
+    }
+
+   }
+   return highestScore;
+
+}
+let playeersInfo = [
+    ['asraful', 15],
+    ['tamim', 55],
+    ['musfic', 6],
+    ['sakib', 5],
+]
+const num = highestRunScore(playeersInfo);
+console.log(num);
