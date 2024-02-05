@@ -192,26 +192,87 @@
 
 
 // 12.2 2D array(amon akti funct toiri koro jekhan theke highscorar ar name output dhekau)?
-function highestRunScore(playeersInfo){
-   var highestScore = playeersInfo[0] [0];
-   var highestScore = playeersInfo[0] [1];
+// function highestRunScore(playeersInfo){
+//    var highestScore = playeersInfo[0] [0];
+//    var highestScore = playeersInfo[0] [1];
 
-   for(var x = 1; x<playeersInfo.length; x++){
+//    for(var x = 1; x<playeersInfo.length; x++){
 
-    if(highestScore < playeersInfo [x] [1]){
-        highestScore = playeersInfo [x] [1];
-        highestScore = playeersInfo[x] [0];
+//     if(highestScore < playeersInfo [x] [1]){
+//         highestScore = playeersInfo [x] [1];
+//         highestScore = playeersInfo[x] [0];
+//     }
+
+//    }
+//    return highestScore;
+
+// }
+// let playeersInfo = [
+//     ['asraful', 15],
+//     ['tamim', 55],
+//     ['musfic', 6],
+//     ['sakib', 5],
+// ]
+// const num = highestRunScore(playeersInfo);
+// console.log(num);
+
+
+// 13 (array ar value samtion adition avg korar program);
+// 13.1 sumation korar khetre?
+// function add(num){
+//     let sum = 0;
+//     for(const number of num){
+//         sum = sum + number;
+//     }
+//     return sum;
+ 
+// }
+// const array = [10,20,30,40,50,60,80];
+// const sum = add(array);
+// console.log(sum);
+
+// 13.2 array ar odd abong even number alada korar program lekh?
+// function oddToEven(nums){
+//     let odd = [];
+//     let even = [];
+//     for(const num of nums ){
+//         if(num % 2 === 0){
+//             even.push(num);
+//         }
+//         else{
+//             odd.push(num);
+//         }
+//     }
+//     console.log(odd);
+//     console.log(even);
+// }
+// const array = [11,12,13,14,15,16,17,18,19,20];
+// oddToEven(array);
+
+// 13.3 array ar pothek value multiplie korte?
+// function multi(num){
+    //     let multiplie = 1;
+    //     for(const nums of num){
+        //         multiplie = multiplie * nums;
+        //     }
+        //     return multiplie;
+        // }
+        // const array = [5,3,2,4];
+        // const result = multi(array);
+        // console.log(result);
+
+// 13.4 (array ar gor ba avarage nirnoy)
+function avg(num){
+    let sum = 0;
+    for(const number of num){
+        sum = sum + number;
     }
-
-   }
-   return highestScore;
-
+    let count = num.length;
+    const avg = sum / count;
+    console.log('array =', num, ' index number =',  count, ' this is sammation =', sum , ' avarage =', avg);
+    
+ 
 }
-let playeersInfo = [
-    ['asraful', 15],
-    ['tamim', 55],
-    ['musfic', 6],
-    ['sakib', 5],
-]
-const num = highestRunScore(playeersInfo);
-console.log(num);
+const array = [11,12,13,14,15,16,17,18,19,20];
+avg(array);
+
