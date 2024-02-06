@@ -225,7 +225,7 @@
 //         sum = sum + number;
 //     }
 //     return sum;
- 
+
 // }
 // const array = [10,20,30,40,50,60,80];
 // const sum = add(array);
@@ -251,28 +251,77 @@
 
 // 13.3 array ar pothek value multiplie korte?
 // function multi(num){
-    //     let multiplie = 1;
-    //     for(const nums of num){
-        //         multiplie = multiplie * nums;
-        //     }
-        //     return multiplie;
-        // }
-        // const array = [5,3,2,4];
-        // const result = multi(array);
-        // console.log(result);
+//     let multiplie = 1;
+//     for(const nums of num){
+//         multiplie = multiplie * nums;
+//     }
+//     return multiplie;
+// }
+// const array = [5,3,2,4];
+// const result = multi(array);
+// console.log(result);
 
-// 13.4 (array ar gor ba avarage nirnoy)
-function avg(num){
-    let sum = 0;
-    for(const number of num){
-        sum = sum + number;
-    }
-    let count = num.length;
-    const avg = sum / count;
-    console.log('array =', num, ' index number =',  count, ' this is sammation =', sum , ' avarage =', avg);
-    
- 
-}
-const array = [11,12,13,14,15,16,17,18,19,20];
-avg(array);
+// 13.4 (array ar gor ba avarage nirnoy)------------------------------------------------------------------------------------->
+// function avg(num){
+//     let sum = 0;
+//     for(const number of num){
+//         sum = sum + number;
+//     }
+//     let count = num.length;
+//     const avg = sum / count;
+//     console.log('array =', num, ' index number =',  count, ' this is sammation =', sum , ' avarage =', avg); 
+// }
+// const array = [11,12,13,14,15,16,17,18,19,20];
+// avg(array);
+// ---------------------------------------------------------------end-----------------------------------------------------------------
 
+// 14.(array ar sobchea largest and minimum value);----------------------------------------------------------------------------------->
+
+ // 14.0 onekgulu songkha theke boro songkha nirnoy?
+// const highest = [10,20,30,40,50,66,77,10,25,];
+// function getMax(numbers){
+  
+//     let max = numbers[0];
+//     for(const num of numbers){
+//         if(num > max){
+//             max = num;
+//         }
+//     }
+//     return max;
+// }
+// const max = getMax(highest);
+// console.log('max value is ', max);
+
+// 14.1 largest
+// function largest(num){
+//   if(num.length === 0){
+//     return 'Array is empty';
+//   }
+//   let big = Math.max(...num);
+//   return big;
+// }
+// const myArray = [10,20,30,5,12,70];
+// const result = largest(myArray);
+// console.log(result);
+
+// 14.2 manimum
+// function largest(num) {
+//     if (num.length === 0) {
+//         return 'Array is empty';
+//     }
+//     let big = Math.min(...num);
+//     return big;
+// }
+// const myArray = [10, 20, 30, 5, 12, 70];
+// const result = largest(myArray);
+// console.log(result);
+// ---------------------------------------------------------end-----------------------------------------------------
+
+
+// 15.string ar man array te convert------------------------------------------------------------------------------->
+// const str = "this is my book. i am reading now.you go to hall";
+// const charArray = str.split(''); /**string ar potiti character array hisebe dekhte */
+// const wordArray = str.split(' ') /**string ar word ke array hisibe dekhte  */
+// console.log(charArray);
+// console.log(wordArray);
+// ------------------------------------------------------end--------------------------------------------------------
