@@ -1,3 +1,12 @@
+/**
+ * types of function:
+ * 1.no parameter, no return:
+ * 2.parameter, no return:
+ * 3.no parameter,  return:
+ * 4.parameter,  return:
+ * 
+ */
+
 // 1. function declaration--------------------------------------------------->
 // function Harun(){
 //     console.log('plese aktu porasuna kor');
