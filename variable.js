@@ -1,56 +1,12 @@
-//1. variable about lear--------------------------------------------------------------------->
+//1. variable about lear-------------------------------------------------------------------------------------------->
 // var == old,re-decleare,re-assign,global-scoped.
 // let = new,cannot re-decleare,re-assign,block-scooped
 // const = new,block-scooped,not re-(declear and assign) but array or object value change kora jai;
 // --------------------------------------------end-------------------------------------------------
 
-// 1: var------------------------------------------>
-// 1.1 re-declaration
-// var a = 10;
-// var a = 20;
-// console.log(a);
-
-// 1.2 re-assgin
-// var a = 10;
-// a=50;
-// console.log(a);
-
-// 1.3 global scooped
-// var a = 20;
-// function add(){
-//     var b = a;
-//     console.log(b);;
-// }
 
 
-
-// 2. let ------------------------------------------------->
-// 2.1: nor a re-declaration
-// let a = 10;
-// let a = 20;
-// console.log(a);/**out pur error asbe */
-
-// 2.2 let  re-assign kora jai
-// let a = 10;
-// a=50;
-// console.log(a);
-
-//23.3 it is a block scooped,not a global scooped
-// let a = 50;
-// function add(){
-//     let b = 20;
-//     console.log(b); /**ata akhon kaj korbenah */
-// }
-// add();
-// console.log(b);
-
-// function add(){
-//     let b = 20;
-//     console.log(b); /**ata akhon kaj korbenah */
-// }
-// add();
-// -----------------------------end-------------------------------------------------------
-// var variable:
+// var variable:----------------------------------------------------------------------------------------------------->
 // 1.1 re-declaration
 // var a = 10;
 // var a = 20;
