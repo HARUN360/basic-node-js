@@ -546,3 +546,22 @@
 // x1();
 // x1();
 // -----------------------------------------------------------end---------------------------------------------------------------------------
+// 20 json format (api)------------------------------------------------------------------------------------------------------------->
+// const loadComments = () => {
+//     fetch('https://jsonplaceholder.typicode.com/comments')
+//     .then(res => res.json())
+//     .then (data => console.log(data))
+    
+// }
+// loadComments();
+
+
+
+// // atai besi bebohito hobe
+// const loadCommetn2 = async() => {
+//     const res = await fetch('https://jsonplaceholder.typicode.com/comments')
+//     const data = await res.json(); 
+//     console.log(data);
+// }
+// loadCommetn2();
+// ---------------------------------------------------end------------------------------------------------------
