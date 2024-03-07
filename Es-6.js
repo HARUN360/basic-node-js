@@ -145,6 +145,33 @@
 // const [a,b] = doubleThem(6,9);
 // console.log(a);
 // console.log(b);
+
+// 5.4-->
+// const employee = {
+//     id:'vs code',
+//     designation:"developer",
+//     machine:"mac",
+//     languages: ["html","css", 'js'],
+//     specification:{
+//         height: 5.6,
+//         weight:55,
+//         addres:'Jamalpur',
+//         drink:'water',
+//         watch:{
+//             color: 'black',
+//             price:1250,
+//             brand:'garmani'
+//         }
+//     }
+// }
+// const {machine,id} = employee;
+// console.log(machine,id);
+// const {height,weight,drink} = employee.specification;
+// console.log(height,'+',weight,'+',drink);
+// const [html] = employee.languages;
+// console.log(html);
+// const {brand} = employee.specification.watch;
+
 // ---------------------------------------------------end-----------------------------------------------------
 
 // 6.spread operator------------------------------------------------------------------------------------------>
@@ -250,6 +277,15 @@
 // const result = numbers.forEach(n => console.log(n));
 // console.log(result); 
 
+// 9.2--?
+// const products = [
+//     {name:'laptop',price:32000,color:'black'},
+//     {name:'keyBord',price:500,color:'black'},
+//     {name:'mouse',price:300,color:'silver'},
+//     {name:'Monitor',price:6000,color:'red'},
+// ];
+// products.forEach(product => console.log(product));
+// products.forEach(product => console.log(product.name));
 // 10. chain nia daronah (protik =? )----------------------------------------------------------------------------------------------------->
 // data access process normal way---?
 // const data = [{id:1,name:'abul',address:'khucu khet'}];
@@ -564,4 +600,46 @@
 //     console.log(data);
 // }
 // loadCommetn2();
+
+// 20.1
+// const student ={
+//     name:'sakib khan',
+//     age:32,
+//     movies:['king khan','dhakar mastan']
+// }
+// const studentJSON = JSON.stringify(student);
+// // console.log(student);
+// console.log(studentJSON);/**string akare asbe sobkisu */
+// const studentObject = JSON.parse(studentJSON);
+// console.log(studentObject);
 // ---------------------------------------------------end------------------------------------------------------
+
+// 21 ternary operator----------------------------------------------------------------------------------------------->
+// const money = 200;
+// let food = money > 100 ? 'biryani' : 'cha biscuit';
+// console.log(food);
+// const myVar = 50;
+// let drink = (money > 100 && myVar > 100) ? 'coke' : 'filter water';
+// console.log(drink);
+
+
+// 22: others resourse----------------------------------------------------------------------------------------------------->
+// number To string convart shortcut
+// const num = 52;
+// const numStr = num + ' ';
+// console.log(typeof numStr);
+
+// string to number
+// const input = "560";
+// const inputNum = +input;
+// console.log(inputNum);
+
+// truthy and falsi
+// const  isActive = true;
+// const  isActive = false;
+// const showUser = () => console.log('display User');
+// const hideUser = () => console.log('hide User');
+// // isActive ? showUser() : hideUser();
+// // two condition
+// // isActive && showUser();
+// isActive || showUser();

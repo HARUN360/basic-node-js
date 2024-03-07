@@ -39,6 +39,20 @@
 // friends.shift();
 // friends.shift();
 // console.log(friends);
+
+// 3.5
+// const products = [
+//     {name:'laptop',price:32000,color:'black'},
+//     {name:'keyBord',price:500,color:'black'},
+//     {name:'mouse',price:300,color:'silver'},
+//     {name:'Monitor',price:6000,color:'red'},
+// ];
+// const newProduct = {name:'webcam',price:700,brand:'lal'};
+// const newProducts = [...products,newProduct];
+// console.log(newProducts);
+// remove mouse:
+// const remaining = products.filter(p => p.name !== 'mouse');
+// console.log(remaining);
 // -------------------------------------------end-------------------------------------------------------------
 
 // 4. array nirdisto upadan khuje pete?
